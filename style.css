@@ -4,17 +4,17 @@ body {
     line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
     margin: 0; /* Elimina márgenes predeterminados */
     padding: 0; /* Elimina relleno predeterminado */
-    background-color: #121212; /* Fondo oscuro para el cuerpo */
+    background-color: #1e1e1e; /* Fondo oscuro para el cuerpo */
     color: #e0e0e0; /* Color del texto claro para contraste */
 }
 
 /* Estilo para el encabezado */
 header {
-    background: #1e1e1e; /* Fondo oscuro para el encabezado */
+    background: #333333; /* Fondo gris oscuro para el encabezado */
     color: #ffffff; /* Color blanco para el texto */
     padding: 1rem; /* Espaciado interno */
     text-align: center; /* Centra el texto */
-    border-bottom: 4px solid #333; /* Línea inferior gris oscuro */
+    border-bottom: 4px solid #444444; /* Línea inferior gris oscuro */
 }
 
 /* Estilo para el menú de navegación */
@@ -33,7 +33,7 @@ nav ul li a {
     color: #ffffff; /* Color blanco para los enlaces */
     text-decoration: none; /* Elimina subrayado */
     padding: 0.75rem 1.5rem; /* Espaciado interno */
-    background: #333333; /* Fondo gris oscuro para los enlaces */
+    background: #444444; /* Fondo gris oscuro para los enlaces */
     border-radius: 6px; /* Bordes redondeados */
     transition: background 0.3s ease; /* Transición suave para el color de fondo */
 }
@@ -49,7 +49,7 @@ main {
 
 /* Estilo para las secciones */
 section {
-    background: #1e1e1e; /* Fondo oscuro para cada sección */
+    background: #2e2e2e; /* Fondo gris oscuro para cada sección */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Sombra más pronunciada */
     padding: 1.5rem; /* Espaciado interno en cada sección */
@@ -63,8 +63,8 @@ section h2 {
 
 /* Estilo para el menú de cursos */
 .box {
-    background: #2e2e2e; /* Fondo gris más claro para el contenedor de cursos */
-    border: 2px solid #444444; /* Borde gris oscuro para el contenedor */
+    background: #3c3c3c; /* Fondo gris más claro para el contenedor de cursos */
+    border: 2px solid #555555; /* Borde gris oscuro para el contenedor */
     border-radius: 8px; /* Bordes redondeados */
     padding: 1rem; /* Espaciado interno */
 }
@@ -77,8 +77,8 @@ section h2 {
 
 .lista li {
     margin-bottom: 1rem; /* Espaciado entre elementos de la lista */
-    background: #333333; /* Fondo gris oscuro para cada elemento */
-    border: 1px solid #444444; /* Borde gris oscuro */
+    background: #444444; /* Fondo gris oscuro para cada elemento */
+    border: 1px solid #555555; /* Borde gris oscuro */
     border-radius: 8px; /* Bordes redondeados */
     padding: 1rem; /* Espaciado interno */
     color: #ffffff; /* Color blanco para el texto */
@@ -96,7 +96,7 @@ section h2 {
 }
 
 .contenedor {
-    background: #444444; /* Fondo gris oscuro para el contenedor de descripción */
+    background: #555555; /* Fondo gris más oscuro para el contenedor de descripción */
     border-radius: 6px; /* Bordes redondeados */
     padding: 0.5rem; /* Espaciado interno en la descripción */
     color: #dddddd; /* Color gris claro para el texto de la descripción */
