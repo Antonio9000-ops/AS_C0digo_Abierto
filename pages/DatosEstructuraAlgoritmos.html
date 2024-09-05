@@ -250,8 +250,133 @@ public class Ejercicio3C {
         
         </ul>
 
-          
+    <hr>
+    <h2 class="semanas">Semana 4</h2>  
+    <ul>
+        <li>Ejercicio <strong>(1)</strong>
+            <p>Usando matriz 3x3 y matriz inversa 2x2</p>
+            <p><strong>Codigo</strong></p>
+            <code>
+                <pre>
+import java.util.Random;
 
+/**
+ *
+ * @author Admin
+ */
+public class Matriz {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        //Hacer una traspuesta de una matriz 3x3
+        int[][]matriz=new int [3][3];
+        //generar una matriz aleatoria
+        Random random = new Random();
+        for(int i=0;i< matriz.length;i++){
+            for(int j=0;j< 3;j++){
+                matriz[i][j]=random.nextInt(101);
+            }
+        }
+        System.out.println("");
+        for(int i=0;i< matriz.length;i++){
+            for(int j=0;j< 3;j++){
+                System.out.print(" "+matriz[i][j]);
+                
+            }
+            System.out.println("");
+        }
+        System.out.println("____________");
+        System.out.println("Su traspuesta es :");
+        int [][] traspuesta=new int [3][3];
+        for(int i=0;i< matriz.length;i++){
+            for(int j=0;j< 3;j++){
+                traspuesta[i][j]=matriz[j][i];
+            }
+        }
+        for(int i=0;i< matriz.length;i++){
+            for(int j=0;j< 3;j++){
+                System.out.print(" "+traspuesta[i][j]);
+                
+            }
+            System.out.println("");
+        }
+        
+        // Ahora la inversa de una matriz 2x2
+        // Para una matriz 2x2:
+        //
+// A = | a  b |
+//     | c  d |
+//
+// La inversa de A, A^-1, se calcula de la siguiente manera:
+//
+// 1. Calcula el determinante de A:
+//    det(A) = ad - bc
+//
+// 2. Intercambia las posiciones de a y d, y cambia el signo de b y c:
+//    |  d  -b |
+//    | -c   a |
+//
+// 3. Divide cada elemento de la matriz resultante por el determinante:
+//    A^-1 = (1 / det(A)) * |  d  -b |
+//                          | -c   a |
+//
+// Por lo tanto, la fórmula completa es:
+// A^-1 = (1 / (ad - bc)) * |  d  -b |
+//                          | -c   a |
+        System.out.println("");
+        System.out.println("_____________");
+        System.out.println("matriz 2x2");
+        double [][] matriz2= new double [2][2];
+        for(int i=0;i< matriz2.length;i++){
+            for(int j=0;j< 2;j++){
+                matriz2[i][j]=random.nextInt(101);
+            }
+        }
+        for(int i=0;i< matriz2.length;i++){
+            for(int j=0;j< 2;j++){
+                System.out.print("  "+matriz2[i][j]);
+                
+            }
+            System.out.println("");
+        }
+        
+        //calcular su determinante
+        double Determinante;
+        double a =matriz2 [0][0]; 
+        double b =matriz2 [0][1]; 
+        double c =matriz2 [1][0]; 
+        double d =matriz2 [1][1]; 
+        System.out.println("");
+        System.out.println("Inversa 2x2");
+        Determinante = (a*d)-(b*c);
+        
+        double A = (1/Determinante);
+        double [][] inversa = new double [2][2];
+        System.out.println("");
+        inversa [0][0]=A*d;
+        inversa [0][1]=A*(-b);
+        inversa [1][0]=A*(-c);
+        inversa [1][1]=A*a;
+        for(int i=0;i< inversa.length;i++){
+            for(int j=0;j< 2;j++){
+                System.out.print(String.format("  "+"%.2f",inversa[i][j]));
+                
+            }
+            System.out.println("");
+        }
+        
+    }
+    
+}
+                </pre>
+            </code>
+        </li>
+        <p>El resultado es: </p>
+        <img src="../image/DatosEstructurasAlg/Semana4(1).png" alt="Ejercicio1"/>
+    </ul>
 </body>
 
 
